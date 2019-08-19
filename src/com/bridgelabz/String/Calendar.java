@@ -9,60 +9,48 @@ public class Calendar {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int day,month ,year,d1;
+		int month ,year,x;
 		
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter year");
 		year = scanner.nextInt();
-		if(year>=1582) 
-		{	
-			
-			
 		System.out.println("Enter month");
 		month = scanner.nextInt();
-		if(month>=1&&month<=12) 
-		    {
-			
-			
-		System.out.println("Enter a day");
-		day=scanner.nextInt();
-		if((year%4==0&&year%100!=0)||year%400==0)
-		     {
-			if(month==2&&day<=29)
-			  {
-				d1 = utility.DayOfWeek(day, month, year);		
-				System.out.println("d1=" +d1);
-			   }
-		
-			else
-			{
-				d1 = utility.DayOfWeek(day, month, year);		
-			System.out.println("d1=" +d1);
-			}
-			
-		}
-		
-	
-			else
-			{
-				if(month==2&&day>28) 
-				{
-					System.out.println("In");
-				}
-				
-				
-				else
-				{
-					d1 = utility.DayOfWeek(day, month, year);		
-					System.out.println("d1=" +d1);
-				}
-			
-			}
+//		System.out.println("Enter day");
+//		x = scanner.nextInt();
+//		System.out.println("Day of week = "+utility.DayOfWeek(x, month, year));
+		 String[] months = {
+		            "",                               // leave empty so that months[1] = "January"
+		            "January", "February", "March",
+		            "April", "May", "June",
+		            "July", "August", "September",
+		            "October", "November", "December"
+		        };
 
-	      }
+		        // days[i] = number of days in month i
+		        int[] days = {
+		          0,  31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31
+		        };
+		        
+		        if (month == 2 && utility.isLeapYear(year)) 
+		        	days[month] = 29;
+		        
+		     // print calendar header
+		        System.out.println("   " + months[month] + " " + year);
+		        System.out.println(" S  M Tu  W Th  F  S");
 
-		}
+		        // starting day
+		        int d = utility.DayOfWeek(month, 1, year);
+		        for (int i = 0; i < d; i++)
+		            System.out.print("   ");
+		        for (int i = 1; i <= days[month]; i++) {
+		            System.out.printf("%2d ", i);
+		            if (((i + d) % 7 == 0) || (i == days[month])) 
+		            	System.out.println();
+
+
 		scanner.close();
+	}
 	}
 	
 }

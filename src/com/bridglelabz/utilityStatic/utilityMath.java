@@ -13,6 +13,10 @@ public class utilityMath {
         System.out.println(sum);
 	}
 	
+	/**
+	 * @param radiun
+	 * @return
+	 */
 	public static double findSin(double radiun) {
 		radiun = Math.toRadians(radiun);
 		return Math.sin(radiun);
@@ -24,6 +28,9 @@ public class utilityMath {
 		return Math.cos(radiun);
 	}
 	
+	/**
+	 * @param n
+	 */
 	public static void Binary(int n)
 	{
 		int a;
@@ -45,6 +52,10 @@ public class utilityMath {
 	}
 	}
 	
+	/**
+	 * @param c
+	 * @return
+	 */
 	public static double findSquareRootUsingNewtonsMethod(int c)
 	{
 		double t, epsilon;
@@ -58,6 +69,10 @@ public class utilityMath {
 		return t;
 	}
 	
+	/**
+	 * @param number
+	 * @return
+	 */
 	public static boolean isPrime(int number) {
 		if (number == 0 || number == 1) {
 		return false;
@@ -72,6 +87,10 @@ public class utilityMath {
 
 		}
 	
+	/**
+	 * @param number
+	 * @return
+	 */
 	public static int CalculateFactorial(int number) {
 		int fact=1;
 		for (int i=1;i<=number;i++) {
@@ -79,5 +98,21 @@ public class utilityMath {
 		}
 		return fact;
 	}
+	
+	public static void Stopwatch() {
+       double start = System.currentTimeMillis();
+    } 
+
+
+    /**
+     * Returns the elapsed CPU time (in seconds) since the stopwatch was created.
+     *
+     * @return elapsed CPU time (in seconds) since the stopwatch was created
+     */
+    public static double elapsedTime() {
+    	double start = System.currentTimeMillis();
+        long now = System.currentTimeMillis();
+        return (now - start) / 1000.0;
+    }
 
 }
