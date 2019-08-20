@@ -17,7 +17,28 @@ public class BLRandom {
 	        double[] probabilities = { 0.5, 0.3, 0.1, 0.1 };
 	       // int[] frequencies = { 5, 3, 1, 1 };
 	        String[] a = "A B C D E F G".split(" ");
+	        
+	        System.out.print("Type a string: ");
+	        String s = utility.StdRandom.readString();
+	        System.out.println("Your string was: " + s);
+	        System.out.println();
 
+	        System.out.print("Type an int: ");
+	        int a1 = utility.StdRandom.readInt();
+	        System.out.println("Your int was: " + a1);
+	        System.out.println();
+
+	        System.out.print("Type a boolean: ");
+	        boolean b = utility.StdRandom.readBoolean();
+	        System.out.println("Your boolean was: " + b);
+	        System.out.println();
+
+	        System.out.print("Type a double: ");
+	        double c = utility.StdRandom.readDouble();
+	        System.out.println("Your double was: " + c);
+	        System.out.println();
+
+	        
 	        System.out.println("seed = " + utility.StdRandom.getSeed());
 	        for (int i = 0; i < n; i++) {
 	            System.out.printf("%2d ",   utility.StdRandom.uniform(100));
@@ -27,10 +48,7 @@ public class BLRandom {
 	            System.out.printf("%1d ",   utility.StdRandom.discrete(probabilities));
 	           
 	            
-	            utility.StdRandom.shuffle(a);
-	            for (String s : a)
-	                System.out.print(s);
-	            System.out.println();
+	            
 	            sc.close();
 
 	}

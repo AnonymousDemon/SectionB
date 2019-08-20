@@ -1,6 +1,6 @@
-package com.bridgelabz.String;
+package com.bridgelabz.pattern;
 
-public class Pattern {
+public class Diamond {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -33,9 +33,7 @@ public class Pattern {
 				System.out.print("*");
 			}
 			System.out.println("");
-			
 		}
-		
 	}
 
 }
