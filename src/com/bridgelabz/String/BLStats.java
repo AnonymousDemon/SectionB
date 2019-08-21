@@ -13,7 +13,7 @@ public class BLStats {
 		System.out.println( "Var = "+UtilityStats.var(a));
 		System.out.println( "Std dev = "+UtilityStats.stddev(a));
 		System.out.println( "Median = "+UtilityStats.median(a));
-
+		
 		
 
 

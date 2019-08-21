@@ -15,6 +15,8 @@ import java.util.Scanner;
 
 public class utility {
 
+	
+
 	public static boolean areAnagram(char[] str1, char[] str2) {
 		// Get lenghts of both strings
 		int n1 = str1.length;
@@ -495,6 +497,29 @@ public class utility {
 
 			    
 	    
+	}
+	
+	public class Stopwatch { 
+
+	    private final long start;
+
+	    /**
+	     * Initializes a new stopwatch.
+	     */
+	    public Stopwatch() {
+	        start = System.currentTimeMillis();
+	    } 
+
+
+	    /**
+	     * Returns the elapsed CPU time (in seconds) since the stopwatch was created.
+	     *
+	     * @return elapsed CPU time (in seconds) since the stopwatch was created
+	     */
+	    public double elapsedTime() {
+	        long now = System.currentTimeMillis();
+	        return (now - start) / 1000.0;
+	    }
 	}
 
 }

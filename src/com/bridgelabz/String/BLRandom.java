@@ -12,31 +12,31 @@ public class BLRandom {
 		 Scanner sc = new Scanner(System.in);
 		 System.out.println("enyer n");
 		 n= sc.nextInt();
-	        if (args.length == 2) 
-	        	utility.StdRandom.setSeed(Long.parseLong(args[1]));
+//	        if (args.length == 2) 
+//	        	utility.StdRandom.setSeed(Long.parseLong(args[1]));
 	        double[] probabilities = { 0.5, 0.3, 0.1, 0.1 };
-	       // int[] frequencies = { 5, 3, 1, 1 };
-	        String[] a = "A B C D E F G".split(" ");
-	        
-	        System.out.print("Type a string: ");
-	        String s = utility.StdRandom.readString();
-	        System.out.println("Your string was: " + s);
-	        System.out.println();
-
-	        System.out.print("Type an int: ");
-	        int a1 = utility.StdRandom.readInt();
-	        System.out.println("Your int was: " + a1);
-	        System.out.println();
-
-	        System.out.print("Type a boolean: ");
-	        boolean b = utility.StdRandom.readBoolean();
-	        System.out.println("Your boolean was: " + b);
-	        System.out.println();
-
-	        System.out.print("Type a double: ");
-	        double c = utility.StdRandom.readDouble();
-	        System.out.println("Your double was: " + c);
-	        System.out.println();
+//	       // int[] frequencies = { 5, 3, 1, 1 };
+//	        String[] a = "A B C D E F G".split(" ");
+//	        
+//	        System.out.print("Type a string: ");
+//	        String s = utility.StdRandom.readString();
+//	        System.out.println("Your string was: " + s);
+//	        System.out.println();
+//
+//	        System.out.print("Type an int: ");
+//	        int a1 = utility.StdRandom.readInt();
+//	        System.out.println("Your int was: " + a1);
+//	        System.out.println();
+//
+//	        System.out.print("Type a boolean: ");
+//	        boolean b = utility.StdRandom.readBoolean();
+//	        System.out.println("Your boolean was: " + b);
+//	        System.out.println();
+//
+//	        System.out.print("Type a double: ");
+//	        double c = utility.StdRandom.readDouble();
+//	        System.out.println("Your double was: " + c);
+//	        System.out.println();
 
 	        
 	        System.out.println("seed = " + utility.StdRandom.getSeed());
