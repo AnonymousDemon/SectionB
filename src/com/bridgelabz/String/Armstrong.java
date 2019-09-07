@@ -20,15 +20,15 @@ public class Armstrong {
 			
 		}
 		
-//		
-//		if(temp==b)
-//		{
-//			System.out.println("arms");
-//		}
-//		else
-//		{
-//			System.out.println("No arm");
-//		}
+		
+		if(temp==b)
+		{
+			System.out.println("arms");
+		}
+		else
+		{
+			System.out.println("No arm");
+		}
 		scanner.close();
 	}
 
